@@ -5,11 +5,11 @@ import com.example.demo.entity.UserEntity;
 
 public interface UserService {
 
-    UserEntity addStudent(UserEntity student);
+    UserEntity addUser(UserEntity user);
 
-    List<UserEntity> getAllStudents();
+    List<UserEntity> getAllUsers();
 
-    UserEntity getStudentById(Long id);
+    UserEntity getUserById(Long id);
 
-    UserEntity updateStudent(Long id, UserEntity student);
+    UserEntity updateUser(Long id, UserEntity user);
 }

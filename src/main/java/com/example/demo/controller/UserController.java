@@ -9,35 +9,31 @@ import com.example.demo.entity.UserEntity;
 import com.example.demo.service.UserService;
 
 @RestController
-@RequestMapping("/User")
+@RequestMapping("/user")
 public class UserController {
 
     @Autowired
     private UserService service;
 
-    // ADD
     @PostMapping("/add")
-    public UserEntity addStudent(@RequestBody UserEntity student) {
-        return service.addStudent(student);
+    public UserEntity addUser(@RequestBody UserEntity user) {
+        return service.addUser(user);
     }
 
-    // GET ALL
     @GetMapping("/all")
-    public List<UserEntity> getAllStudents() {
-        return service.getAllStudents();
+    public List<UserEntity> getAllUsers() {
+        return service.getAllUsers();
     }
 
-    // GET BY ID
     @GetMapping("/{id}")
-    public UserEntity getStudentById(@PathVariable Long id) {
-        return service.getStudentById(id);
+    public UserEntity getUserById(@PathVariable Long id) {
+        return service.getUserById(id);
     }
 
-    // UPDATE
     @PutMapping("/update/{id}")
-    public UserEntity updateStudent(
+    public UserEntity updateUser(
             @PathVariable Long id,
-            @RequestBody UserEntity student) {
-        return service.updateStudent(id, student);
+            @RequestBody UserEntity user) {
+        return service.updateUser(id, user);
     }
 }
