@@ -11,11 +11,12 @@ public class UserEntity {
     public UserEntity() {
     }
 
-    public UserEntity(Long id, String user, int age, String email) {
+    public UserEntity(Long id, String user, String vehicleNumber, Double capacity,Double fuelEff) {
         this.id = id;
-        this.name = name;
-        this.age = age;
-        this.email = email;
+        this.user = user;
+        this.vehicleNumber = vehicleNumber;
+        this.capacity = capacity;
+        this.fuelEff=fuelEff;
     }
 
     public Long getId() {
