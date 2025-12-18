@@ -37,7 +37,7 @@ public class UserController {
     @PutMapping("/update/{id}")
     public UserEntity updateStudent(
             @PathVariable Long id,
-            @RequestBody StudentEntity student) {
+            @RequestBody UserEntity student) {
         return service.updateStudent(id, student);
     }
 }
