@@ -1,8 +1,8 @@
 package com.example.demo.entity;
 
 public class UserEntity {
-
-    private @id Long id;
+    @Id
+    private Long id;
     private String user;
     private String vehicleNumber;
     private Double capacity;
@@ -27,27 +27,35 @@ public class UserEntity {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getUser() {
+        return user;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUser(String user) {
+        this.user = user;
     }
 
-    public int getAge() {
-        return age;
+    public String getVehicleNumber() {
+        return vehicleNumber;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setVehicleNumber(String vehicleNumber) {
+        this.vehicleNumber = vehicleNumber;
     }
 
-    public String getEmail() {
-        return email;
+    public Double getCapacity() {
+        return capacity;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setCapacity(Double capacity) {
+        this.capacity = capacity;
+    }
+
+    public Double getFuelEff() {
+        return fuelEff;
+    }
+
+    public void setFuelEff(Double fuelEff) {
+        this.fuelEff = fuelEff;
     }
 }
